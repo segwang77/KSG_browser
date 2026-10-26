@@ -3,17 +3,6 @@
 macOS 스타일의 데스크톱 화면(메뉴 막대 · 바탕화면 폴더 · 창 · Dock)을 가진 Windows용 브라우저입니다.
 Electron(Chromium) 위에서 동작하며, 화면에 보이는 것은 모두 HTML/CSS로 직접 그립니다.
 
-## 실행
-
-Node.js LTS가 설치되어 있어야 합니다. 명령 프롬프트(cmd)에서:
-
-```
-npm install
-npm start
-```
-
-설치 파일 만들기: `npm run make` (결과물은 `out/make` 폴더)
-
 ## 사용법
 
 | 하고 싶은 일               | 방법                                                |
@@ -65,6 +54,4 @@ npm start
 ## 알아둘 점
 
 - 웹사이트의 위치 · 카메라 · 마이크 · 알림 권한 요청은 모두 거부하도록 되어 있습니다(`src/main.ts`의 `ALLOWED_PERMISSIONS`).
-- 임의의 웹사이트를 여는 앱이므로 `npm install electron@latest`로 Electron을 꾸준히 올려 보안 패치를 받으세요.
-- 코드 서명 인증서 없이 만든 설치 파일은 Windows SmartScreen 경고가 뜹니다.
 - 폰트는 Pretendard, 아이콘은 Lucide를 씁니다. Apple의 폰트 · 아이콘 · 배경화면은 포함하지 않았습니다.
